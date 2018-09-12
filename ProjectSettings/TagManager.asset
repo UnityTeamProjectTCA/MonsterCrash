@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Button
+  - Monster
+  - Title
+  - bullet
+  - Floor
+  - enemybullet
+  - EnemyA
+  - EnemyB
+  - EnemyC
+  - Explosion
+  - DeathBlow
+  - Fire
+  - CanDestroy
+  - Destructible
+  - Waypoint
+  - Breadcrumb
+  - Enemy
+  - EscapeArea
+  - EscapePoint
+  - BuildingBigType1
+  - BuildingBigType2
+  - BuildingSmallType1
+  - BuildingSmallType2
+  - DeathBlowEffect
+  - CountDown
+  - Warning
+  - BuildingSmallType3
+  - BuildingBigType3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - effect
+  - BuildingSmall
+  - Monster
+  - Player
+  - Enemy
+  - Breadcrumb
+  - Floor
+  - Building
+  - Debris
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

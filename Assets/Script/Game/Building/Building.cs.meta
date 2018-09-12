@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ca425d096e2264645a5d02a9ea908896
+timeCreated: 1526716713
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _explosion_small_type1: {fileID: 1788537726945200, guid: a57025740b763464d95229b152919336,
+      type: 2}
+  - _explosion_small_type2: {fileID: 1985826643740160, guid: b02cf6c0fd88148abbb7d1d69ea89b83,
+      type: 2}
+  - _explosion_big_type1: {fileID: 1165121769518092, guid: e2737d521091549a0842ffb1c404e9dd,
+      type: 2}
+  - _explosion_big_type2: {fileID: 1976126032521044, guid: e3f5703a4d63f40b5aaea8d975cc52de,
+      type: 2}
+  - _debris: {fileID: 1476201315892632, guid: f561c57e06d6f491d9a75c071ce1ec73, type: 2}
+  - _score_manager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
