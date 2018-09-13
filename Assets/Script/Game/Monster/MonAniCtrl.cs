@@ -10,6 +10,8 @@ public class MonAniCtrl : MonoBehaviour {
 	bool _walk_flag = false;
 	bool _deathblow_flag = false;
 	bool _idle_flag = true;
+	bool _walk_sound = false;
+
 
 	// Use this for initialization
 	void Start ( ) {
@@ -49,10 +51,16 @@ public class MonAniCtrl : MonoBehaviour {
 			_walk_flag = true;
 			_attack_flag = false;
 			_idle_flag = false;
-			walk_sound.Play( );
+			if ( !_walk_sound ) {
+				walk_sound.Play( );
+				_walk_sound = true;
+			}
 		} else {
 			_walk_flag = false;
-			walk_sound.Pause( );
+			if (_walk_sound) {
+				walk_sound.Stop ();
+				_walk_sound = false;
+			}
 		}
 
 		if ( Input.GetButtonDown( "Fire1" ) ) {
@@ -64,6 +72,7 @@ public class MonAniCtrl : MonoBehaviour {
 
 		if ( Input.GetButtonUp( "Fire1" ) || _player.getFireStamina( ) <= 0 ) {
 			_attack_flag = false;
+			attack_sound.Stop( );
 		}
 
 		if ( !_attack_flag && !_deathblow_flag && !_walk_flag ) {
