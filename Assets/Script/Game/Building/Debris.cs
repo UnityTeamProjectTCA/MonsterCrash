@@ -19,9 +19,9 @@ public class Debris : MonoBehaviour {
 		dir.z = 1f;
 		dir.y = Random.Range( 0, 1f );
 
-		Rigidbody _rigidbody = gameObject.GetComponent<Rigidbody>( );
+		Rigidbody _rigidbody = GetComponent<Rigidbody>( );
 		_rigidbody.AddForce( _player.transform.TransformVector( dir ) * _power );
-		//_rigidbody.velocity = _player.transform.TransformVector( dir ) * 10f;
+		//_rigidbody.velocity = _player.transform.TransformVector( dir ) * _power;
 	}
 	
 	// Update is called once per frame

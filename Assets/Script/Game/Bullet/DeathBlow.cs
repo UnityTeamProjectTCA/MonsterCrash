@@ -3,6 +3,8 @@
 public class DeathBlow : MonoBehaviour {
 	const float CHARGE_SIZE = 3;
 
+	[SerializeField] GameObject _effect = null;
+
 	float _deathblow_pos_y = 0;
 	float _deathblow_pos_z = 0;
 
@@ -59,6 +61,7 @@ public class DeathBlow : MonoBehaviour {
 			CameraScript._sway_time_count = _sway_time;
 			Destroy( gameObject );
 			_deathblow_effect.Play( );
+			Instantiate( _effect, transform.position + transform.up * 2, Quaternion.Euler( 0, 0, 0 ) );
 		}
 	}
 }

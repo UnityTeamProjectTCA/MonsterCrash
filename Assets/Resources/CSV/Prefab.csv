@@ -14,7 +14,7 @@ charge_speed,3
 sway_time,3
 //Debris
 debris_disappear_time,3
-debris_addpower,1000
+debris_addpower,5000
 //EnemyAI
 bullet_pos,3
 attack_wait_time,6

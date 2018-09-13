@@ -3,6 +3,7 @@
 public class Player : MonoBehaviour {
 	//アタック
 	[SerializeField] ParticleSystem _fire = null;
+	bool _fire_flag = false;
 	float _fire_pos_y = 0;
 	float _fire_pos_z = 0;
 	float _stamina_max = 0;
@@ -40,6 +41,12 @@ public class Player : MonoBehaviour {
 	[SerializeField] GameObject _canvas = null;
 	[SerializeField] GameObject _cutin = null;
 
+	//ペナルティ
+	float _demirit_time = 0;
+	float _demirit_time_count = 0;
+	public static bool _demirit = false;
+
+
 	Vector3 _initial_pos = Vector3.zero;    //初期位置
 	Quaternion _initial_dir;                //初期角度
 
@@ -53,11 +60,15 @@ public class Player : MonoBehaviour {
 		_raised_velocity = GameCSV._raised_velocity;
 		_speedup_time    = GameCSV._speedup_time;
 		_rangeup_time    = GameCSV._rangeup_time;
+		_demirit_time    = GameCSV._demirit_time;
 
 		_deathblow_count = 1;
 		_speedup_count = _speedup_time;
 		_rangeup_count = _rangeup_time;
 		_fire_stamina = _stamina_max;
+
+		_demirit_time_count = _demirit_time;
+		_demirit = false;
 
 		_initial_pos = transform.position;
 		_initial_dir = transform.rotation;
@@ -65,8 +76,14 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
+		Debug.Log (_playable);
 		if ( !_playable ) {
 			_fire.Stop( );
+			return;
+		}
+
+		if ( _demirit ) {
+			Demirit( );
 			return;
 		}
 
@@ -99,17 +116,14 @@ public class Player : MonoBehaviour {
 		if ( !_deathblow_prepare && Input.GetButton( "Fire1" ) && _fire_stamina > 0 ) {
 			_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
 			if ( Input.GetButton( "Fire1" ) ) {
-				_wait_time_count = 1;
-			}
-			if ( Input.GetButtonDown( "Fire1" ) ) {
 				_movable = false;
-				_fire.Play( );
 			}
 		}
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
 			_wait_time_count = 0;
 			_movable = true;
 			_fire.Stop( );
+			_fire_flag = false;
 		}
 	}
 
@@ -178,10 +192,10 @@ public class Player : MonoBehaviour {
 	}
 
 	void calStamina ( ) {
-		if ( _fire_stamina < _stamina_max && !Input.GetButton( "Fire1" ) ) {
+		if ( _fire_stamina < _stamina_max && !_fire_flag ) {
 			_fire_stamina += Time.deltaTime * _stamina_speed;
 		}
-		if ( _fire_stamina > 0 && Input.GetButton( "Fire1" ) ) {
+		if ( _fire_stamina > 0 && _fire_flag ) {
 			_fire_stamina -= Time.deltaTime * _stamina_speed;
 		}
 		if ( _fire_stamina > _stamina_max ) {
@@ -191,6 +205,23 @@ public class Player : MonoBehaviour {
 			_fire_stamina = 0;
 		}
 	}
+
+	void Demirit( ) {
+		_demirit_time_count -= Time.deltaTime;
+
+		if ( _demirit_time_count < 0 ) {
+			_playable = true;
+			_demirit = false;
+			_demirit_time_count = _demirit_time;
+		}
+	}
+
+	void OnCollisionEnter( Collision other ) {
+		if ( other.gameObject.tag == "enemybullet" && !CutIn._cutin_flag ) {
+			_demirit = true;
+		}	
+	}
+
 
 	public float getFireStamina ( ) {
 		return _fire_stamina;
@@ -210,8 +241,8 @@ public class Player : MonoBehaviour {
 		transform.rotation = _initial_dir;
 	}
 
-	//怪獣の炎を消す
-	public void StopFire ( ) {
-		_fire.Stop( );
+	public void OpenFire ( ) {
+		_fire.Play( );
+		_fire_flag = true;
 	}
 }

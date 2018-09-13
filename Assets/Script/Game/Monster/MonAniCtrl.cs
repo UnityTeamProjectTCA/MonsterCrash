@@ -30,6 +30,18 @@ public class MonAniCtrl : MonoBehaviour {
 			_attack_flag = false;
 			return;
 		}
+
+		if ( Player._demirit ) {
+			_anim.SetFloat( "WalkSpeed",0 );
+			_anim.SetFloat( "IdleSpeed",0 );
+			_anim.SetFloat( "AttackSpeed",0 );
+			return;
+		} else {
+			_anim.SetFloat( "WalkSpeed",1.0f );
+			_anim.SetFloat( "IdleSpeed",1.0f );
+			_anim.SetFloat( "AttackSpeed",1.0f );
+		}
+
 		if ( CutIn._cutin_flag ) {
 			_deathblow_flag = true;
 			_idle_flag = false;
