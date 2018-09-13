@@ -13,6 +13,7 @@ public class GameCSV : LoadCSV {
 		RAISED_VELOCITY,
 		SPEEDUP_TIME,
 		RANGEUP_TIME,
+		DEMIRIT_TIME,
 		//Camera
 		RADIUS,
 		START_Y,
@@ -66,6 +67,7 @@ public class GameCSV : LoadCSV {
 	public static float _raised_velocity = 0;
 	public static float _speedup_time = 0;
 	public static float _rangeup_time = 0;
+	public static float _demirit_time = 0;
 
 	//Camera
 	public static float _radius = 0;
@@ -129,6 +131,7 @@ public class GameCSV : LoadCSV {
 		_raised_velocity = float.Parse( _csvData[ ( int )VARIABLE_NAME.RAISED_VELOCITY ][ ( int )PROPERTY.VALUE ] );
 		_speedup_time	 = float.Parse( _csvData[ ( int )VARIABLE_NAME.SPEEDUP_TIME    ][ ( int )PROPERTY.VALUE ] );
 		_rangeup_time    = float.Parse( _csvData[ ( int )VARIABLE_NAME.RANGEUP_TIME    ][ ( int )PROPERTY.VALUE ] );
+		_demirit_time    = float.Parse( _csvData[ ( int )VARIABLE_NAME.DEMIRIT_TIME    ][ ( int )PROPERTY.VALUE ] );
 
 		_radius                = float.Parse( _csvData[ ( int )VARIABLE_NAME.RADIUS                ][ ( int )PROPERTY.VALUE ] );
 		_start_y               = float.Parse( _csvData[ ( int )VARIABLE_NAME.START_Y               ][ ( int )PROPERTY.VALUE ] );

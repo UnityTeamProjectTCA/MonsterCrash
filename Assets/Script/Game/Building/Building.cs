@@ -109,7 +109,7 @@ public class Building : MonoBehaviour {
 
 	//建物が壊れる瞬間の処理-------------------------------------------------------
 	void BuildingCrash ( ) {
-		breaking_SE.Play( );
+		//breaking_SE.Play( );
 
 		//瓦礫生成
 		for ( int i = 0; i < _debris_num; i++ ) {
@@ -119,8 +119,8 @@ public class Building : MonoBehaviour {
 		Instantiate( _explosion, transform.position, Quaternion.identity );     //爆発生成
 
 
-		//Destroy( gameObject );                                                  //建物削除
-		gameObject.SetActive( false );
+		Destroy( gameObject );                                                  //建物削除
+		//gameObject.SetActive( false );										//建物復活用
 	}
 	//--------------------------------------------------------------------------
 

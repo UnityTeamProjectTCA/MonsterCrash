@@ -192,9 +192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _explosion: {fileID: 1788537726945200, guid: a57025740b763464d95229b152919336, type: 2}
   _debris: {fileID: 1042552167552068, guid: be35b28acc10042eba0021fd902b3b01, type: 2}
-  _debris_num: 3
-  _stop_time_small1: 0.05
-  _stop_time_small2: 0.1
   breaking_SE: {fileID: 0}
 --- !u!208 &208847832770963700
 NavMeshObstacle:

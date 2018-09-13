@@ -7,6 +7,7 @@ origin_velocity,30
 raised_velocity,60
 speedup_time,3
 rangeup_time,3
+demirit_time,1
 //Camera
 radius,15
 start_y,6
