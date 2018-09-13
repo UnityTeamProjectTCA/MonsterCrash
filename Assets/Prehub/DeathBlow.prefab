@@ -112,12 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fef2001c34603540bb5cad7d29c5b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathblow_pos_y: 8
-  _deathblow_pos_z: 5
-  _deathblow_speed: 6
-  _charge_speed: 3
-  _sway_time: 3
-  _cutin: {fileID: 1635020195650086, guid: 414ab73917892cb4ba8f50608684e99a, type: 2}
+  _effect: {fileID: 1673293033488124, guid: c3fe3ec79d7c57e48a6a051778b4a0be, type: 2}
 --- !u!135 &135643508268282608
 SphereCollider:
   m_ObjectHideFlags: 1
