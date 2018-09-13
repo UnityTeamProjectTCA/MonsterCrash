@@ -17,10 +17,10 @@ debris_disappear_time,3
 debris_addpower,1000
 //EnemyAI
 bullet_pos,3
-attack_wait_time,2
-attack_time,10
-attack_distance,30
-avoid_distance,40
+attack_wait_time,6
+attack_time,100
+attack_distance,40
+avoid_distance,30
 //EnemyDied
 death_rotate_speed,1000
 death_disappear_time,1

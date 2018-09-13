@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2f32363090e3a9e4a93305116f4459fa
-timeCreated: 1536566780
+guid: 53947c473afa14c44942525a50536984
+timeCreated: 1536749643
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -263,7 +263,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -276,7 +276,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.58282936
+      - time: 0.5850673
         functionName: BulletInstantiate
         data: 
         objectReferenceParameter: {instanceID: 0}

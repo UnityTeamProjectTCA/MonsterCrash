@@ -11,6 +11,7 @@ public class EnemyAi : MonoBehaviour {
 	[SerializeField] GameObject _bullet = null;
 
 	STATUS _status = STATUS.ATTACK;
+	EnemyAniCtrl _enemy_anim_ctrl = null;
 	EscapeArea[ ] _escape_area = new EscapeArea[ 4 ];
 	EscapePoint _escape_point = null;
 	NavMeshAgent _agent = null;
@@ -18,8 +19,7 @@ public class EnemyAi : MonoBehaviour {
 	float _attack_wait_count = 0;       //攻撃する感覚の時間
 	int _escape_area_num = 0;           //逃げるエリアの番号
 	bool _attack = false;               //攻撃するかどうか
-    bool _attack_anim = false;          //攻撃モーションをするかどうか
-    bool _moving_anim = false;          //移動モーションをするかどうか
+    
 	bool _arrival = true;               //目的地に到達したかどうか
 	bool _initial_destination = false;  //初期目的地
 
@@ -48,6 +48,7 @@ public class EnemyAi : MonoBehaviour {
 		_player = GameObject.FindGameObjectWithTag( "Player" );
 		_agent = GetComponent<NavMeshAgent>( );
 		_attack_wait_count = _attack_wait_time;
+		_enemy_anim_ctrl = GetComponent<EnemyAniCtrl>( );
 	}
 
 	
@@ -83,14 +84,14 @@ public class EnemyAi : MonoBehaviour {
 
 		//条件によってアニメーションのフラグを立てる
 		if ( _attack_wait_count < 0 && _attack ) {
-            _attack_anim = true;
-            _moving_anim = false;
+            _enemy_anim_ctrl.setAttackAnimFlag( true );
+            _enemy_anim_ctrl.setWalkAnimFlag( false );
 		} else if ( _attack ) {
-            _attack_anim = false;
-            _moving_anim = false;
+            _enemy_anim_ctrl.setAttackAnimFlag( false );
+            _enemy_anim_ctrl.setWalkAnimFlag( false );
         } else { 
-            _attack_anim = false;
-            _moving_anim = true;
+            _enemy_anim_ctrl.setAttackAnimFlag( false );
+            _enemy_anim_ctrl.setWalkAnimFlag( true );
         }
 
        AttackTimeCount( );
@@ -141,13 +142,13 @@ public class EnemyAi : MonoBehaviour {
 			_agent.SetDestination( escape_point.transform.position );
 
 			//目的地に着いていないことにする
-            _moving_anim = true;                //移動アニメーションフラグを立てる
+            _enemy_anim_ctrl.setWalkAnimFlag( true );                //移動アニメーションフラグを立てる
 			_arrival = false;
 		}
 
 		//ポイントに入ったらに変更する
 		if ( _escape_point.getIntrusionPoint( ) ) {
-            _moving_anim = false;               //移動アニメーションフラグを消す
+            _enemy_anim_ctrl.setWalkAnimFlag( false );               //移動アニメーションフラグを消す
 			_arrival = true;    //目的地についたことにする
 		}
 	}
@@ -182,8 +183,8 @@ public class EnemyAi : MonoBehaviour {
 
 		//攻撃する時間が過ぎたら逃げるパートへ
 		if ( _attack_time < 0 ) {
-            _attack_anim = false;
-            _moving_anim = true;
+            _enemy_anim_ctrl.setAttackAnimFlag( false );
+            _enemy_anim_ctrl.setWalkAnimFlag( true );
 			_status = STATUS.ESCAPE;
 		}
 	}
@@ -194,13 +195,5 @@ public class EnemyAi : MonoBehaviour {
         _enemy_attack_sound.Play( );
 
 		_attack_wait_count = _attack_wait_time;
-    }
-
-    public bool getMoving( ) { 
-        return _moving_anim;
-    }
-
-    public bool getAttack( ) { 
-        return _attack_anim;    
     }
 }

@@ -3,30 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAniCtrl : MonoBehaviour {
-    EnemyAi _enemy_ai = null;
     Animator _anim = null;
+
+	bool _attack_anim = false;          //攻撃モーションをするかどうか
+    bool _walk_anim = false;          //移動モーションをするかどうか
 	// Use this for initialization
 	void Start( ) {
-        _enemy_ai = GetComponent<EnemyAi>( );
 		_anim = GetComponent<Animator>( );
 	}
 	
 	// Update is called once per frame
 	void Update( ) {
 		
-        if ( _enemy_ai.getAttack( ) ) { 
+        if ( _attack_anim && !_walk_anim ) { 
             _anim.SetBool( "Walk", false );
             _anim.SetBool( "Attack", true );
             _anim.SetBool( "Standbye", false );
-        } else if ( _enemy_ai.getMoving( ) ) {
+        }
+
+		if ( !_attack_anim && _walk_anim ) {
             _anim.SetBool( "Walk", true );
             _anim.SetBool( "Attack", false );
             _anim.SetBool( "Standbye", false );
-        } else { 
+        }
+
+		if ( !_attack_anim && !_walk_anim ) { 
             _anim.SetBool( "Walk", false );
             _anim.SetBool( "Attack", false );
             _anim.SetBool( "Standbye", true );
         }
 
+	}
+
+	public void setAttackAnimFlag( bool flag ) {
+		_attack_anim = flag;
+	}
+
+	public void setWalkAnimFlag( bool flag ) {
+		_walk_anim = flag;
 	}
 }

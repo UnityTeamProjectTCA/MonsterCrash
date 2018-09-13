@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
-  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -55,10 +54,11 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
-    m_AtlasSize: 1024
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -1924,7 +1924,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1973,7 +1973,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 5ec27a7938383554e902ad9949843f60, type: 2}
   m_StaticBatchInfo:
@@ -2673,150 +2672,102 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -2895,78 +2846,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -3045,78 +2972,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -3195,78 +3098,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -3511,809 +3390,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1093553749
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 30.793747
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 9.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553518065152300, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1156067368658512, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401126783173302, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf,
-        type: 2}
-      propertyPath: _attack_time
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041920179357936, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -12.993655
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041920179357936, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -122.74188
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041920179357936, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -6.856818
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363980859588540, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.1380602
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465457461171248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.5634592
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465457461171248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.302263
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465457461171248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 2.0630383
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849438063534332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.078642234
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849438063534332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.024268832
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849438063534332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 11.461474
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810997862348122, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.950801
-      objectReference: {fileID: 0}
-    - target: {fileID: 4215329318517562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.04183787
-      objectReference: {fileID: 0}
-    - target: {fileID: 4215329318517562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -11.997183
-      objectReference: {fileID: 0}
-    - target: {fileID: 4215329318517562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.1901262
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774585429496344, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 13.451776
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774585429496344, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -37.23501
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774585429496344, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 22.738104
-      objectReference: {fileID: 0}
-    - target: {fileID: 4072639787468710, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.3052526
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617638763018402, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.452482
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386152513700528, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.3052526
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484141658668188, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.33400357
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484141658668188, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -31.184208
-      objectReference: {fileID: 0}
-    - target: {fileID: 4484141658668188, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.110425
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386660884985270, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.7210977
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386660884985270, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -27.366032
-      objectReference: {fileID: 0}
-    - target: {fileID: 4386660884985270, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -12.39047
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765790251594486, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.33400357
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765790251594486, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -31.184208
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765790251594486, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.110425
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418810196217272, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.85241884
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418810196217272, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -67.30747
-      objectReference: {fileID: 0}
-    - target: {fileID: 4445098632606018, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 19.004404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572727210185964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 8.464754
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572727210185964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -159.84686
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572727210185964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -38.022594
-      objectReference: {fileID: 0}
-    - target: {fileID: 4232177208026248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4232177208026248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4232177208026248, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.80260175
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614935451620754, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.5634592
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614935451620754, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.302263
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614935451620754, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 2.0630383
-      objectReference: {fileID: 0}
-    - target: {fileID: 4030797303390796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4030797303390796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4030797303390796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 13.009729
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672774851645704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672774851645704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672774851645704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713533977815830, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.372477
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713533977815830, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -30.199434
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713533977815830, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 37.145
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942203632603942, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.20379335
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942203632603942, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.06481512
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942203632603942, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -20.249239
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370412043408420, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -29.832714
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370412043408420, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -4.5916023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370412043408420, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.92714
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840597901855502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -9.156629
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840597901855502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.086142
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840597901855502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -13.313713
-      objectReference: {fileID: 0}
-    - target: {fileID: 4690242316549672, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.6754043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4690242316549672, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.17947191
-      objectReference: {fileID: 0}
-    - target: {fileID: 4690242316549672, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.088991
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898113794006094, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.4022128
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898113794006094, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -20.795267
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898113794006094, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.8948053
-      objectReference: {fileID: 0}
-    - target: {fileID: 4437376626527562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.5984934
-      objectReference: {fileID: 0}
-    - target: {fileID: 4391867423551470, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.5984933
-      objectReference: {fileID: 0}
-    - target: {fileID: 4391867423551470, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.000000013340939
-      objectReference: {fileID: 0}
-    - target: {fileID: 4391867423551470, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 47.274857
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303697537521178, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.06762775
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303697537521178, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -7.597717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303697537521178, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.2945497
-      objectReference: {fileID: 0}
-    - target: {fileID: 4241517733953788, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.452482
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470082508834114, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470082508834114, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470082508834114, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -99.06322
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967406976904446, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.372477
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967406976904446, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -30.199434
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967406976904446, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 37.145
-      objectReference: {fileID: 0}
-    - target: {fileID: 4637342013021450, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 19.004404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246542942065370, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.815349
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246542942065370, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 3.6395535
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246542942065370, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.833748
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471634981622958, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.993654
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471634981622958, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 122.74188
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471634981622958, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 162.9666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643605066216396, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.28236115
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643605066216396, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.00005692963
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643605066216396, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.5970672
-      objectReference: {fileID: 0}
-    - target: {fileID: 4357566693345074, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.241625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4357566693345074, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -22.019783
-      objectReference: {fileID: 0}
-    - target: {fileID: 4357566693345074, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.133359
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456855666674696, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.2123675
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456855666674696, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -25.815857
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456855666674696, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.7706795
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556935987531120, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.026578533
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556935987531120, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -15.681483
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556935987531120, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.17748341
-      objectReference: {fileID: 0}
-    - target: {fileID: 4951363087862578, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.1380602
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340423199593310, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.06762775
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340423199593310, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -7.597717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340423199593310, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.2945497
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515471695779100, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.026578533
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515471695779100, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -15.681483
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515471695779100, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.17748341
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198476355569410, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 13.451776
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198476355569410, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -37.23501
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198476355569410, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 22.738104
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146866324336334, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.35497242
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146866324336334, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -11.65683
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146866324336334, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -15.705901
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855810307260916, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.430753
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855810307260916, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -20.230778
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855810307260916, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.9555044
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408396171690562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.13806
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408396171690562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408396171690562, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 57.031574
-      objectReference: {fileID: 0}
-    - target: {fileID: 4264689898058522, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.1910963
-      objectReference: {fileID: 0}
-    - target: {fileID: 4264689898058522, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.803144
-      objectReference: {fileID: 0}
-    - target: {fileID: 4264689898058522, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.4186964
-      objectReference: {fileID: 0}
-    - target: {fileID: 4653906780719720, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.429545
-      objectReference: {fileID: 0}
-    - target: {fileID: 4653906780719720, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -32.427235
-      objectReference: {fileID: 0}
-    - target: {fileID: 4653906780719720, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -15.866377
-      objectReference: {fileID: 0}
-    - target: {fileID: 4483262361890066, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.1910963
-      objectReference: {fileID: 0}
-    - target: {fileID: 4483262361890066, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -17.803144
-      objectReference: {fileID: 0}
-    - target: {fileID: 4483262361890066, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.4186964
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838479544577796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.2110591
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838479544577796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -14.54265
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838479544577796, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.7144604
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983654841379422, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.04183787
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983654841379422, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -11.997183
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983654841379422, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.1901262
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799685279232976, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -37.01271
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799685279232976, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 28.741676
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799685279232976, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -46.71724
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674281605480828, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.2823878
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674281605480828, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.0018548823
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674281605480828, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.5970569
-      objectReference: {fileID: 0}
-    - target: {fileID: 4355560825754150, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4355560825754150, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4355560825754150, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.80260175
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841659561341704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.2110591
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841659561341704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -14.54265
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841659561341704, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.7144604
-      objectReference: {fileID: 0}
-    - target: {fileID: 4161653225743042, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -6.5142937
-      objectReference: {fileID: 0}
-    - target: {fileID: 4161653225743042, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 161.8333
-      objectReference: {fileID: 0}
-    - target: {fileID: 4161653225743042, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 149.60092
-      objectReference: {fileID: 0}
-    - target: {fileID: 4409568150493502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.815349
-      objectReference: {fileID: 0}
-    - target: {fileID: 4409568150493502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 3.6395535
-      objectReference: {fileID: 0}
-    - target: {fileID: 4409568150493502, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.833748
-      objectReference: {fileID: 0}
-    - target: {fileID: 4795315792330650, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.5984934
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444231975618658, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.241625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444231975618658, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -22.019783
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444231975618658, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.133359
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292243413621964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.8389848
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292243413621964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.14820828
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292243413621964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -77.30836
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476007543234970, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.430753
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476007543234970, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -20.230778
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476007543234970, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -4.9555044
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530811112604938, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.0258455
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530811112604938, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -26.76694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530811112604938, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.547189
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954698196792964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.4022128
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954698196792964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -20.795267
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954698196792964, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.8948053
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383421607224384, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.429545
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383421607224384, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -32.427235
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383421607224384, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -15.866377
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335923625602938, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.950801
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306554487473986, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306554487473986, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306554487473986, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145915392954792, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -8.431551
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145915392954792, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -16.219791
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145915392954792, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -22.714462
-      objectReference: {fileID: 0}
-    - target: {fileID: 4886697892628332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -37.748775
-      objectReference: {fileID: 0}
-    - target: {fileID: 4886697892628332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 5.8739862
-      objectReference: {fileID: 0}
-    - target: {fileID: 4886697892628332, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.1164665
-      objectReference: {fileID: 0}
-    - target: {fileID: 4150841591522532, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -9.101232
-      objectReference: {fileID: 0}
-    - target: {fileID: 4150841591522532, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -27.304663
-      objectReference: {fileID: 0}
-    - target: {fileID: 4150841591522532, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -18.231636
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824713177810772, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -37.01271
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824713177810772, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 28.741676
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824713177810772, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -46.71724
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470463195507434, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.0258455
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470463195507434, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -26.76694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470463195507434, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.547189
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1115022615
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,9 +3438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99bfd5f557c7dd42ae596c076a9443a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy_A: {fileID: 1156067368658512, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
-  _enemy_B: {fileID: 1041333740673922, guid: c1ae5508e4b60974bb07779003eaace0, type: 2}
-  _enemy_C: {fileID: 1192802766639828, guid: 5cb7436c1491c064e952c098e49b65d8, type: 2}
+  _enemy_A: {fileID: 1246316701892512, guid: b23a4b35c0eadcd4eb3acd5aa6e8b2bf, type: 2}
+  _enemy_B: {fileID: 1114752653948136, guid: c1ae5508e4b60974bb07779003eaace0, type: 2}
+  _enemy_C: {fileID: 1113951806420926, guid: 5cb7436c1491c064e952c098e49b65d8, type: 2}
 --- !u!65 &1115022620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4390,7 +3466,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d539d972ff9208e4b9c5eba17e9b828c, type: 2}
   m_StaticBatchInfo:
@@ -4621,150 +3696,102 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4843,78 +3870,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -4993,78 +3996,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5143,78 +4122,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5487,78 +4442,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -5601,42 +4532,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5679,42 +4598,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -5757,42 +4664,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5968,78 +4863,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -6082,42 +4953,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -6160,42 +5019,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -6238,42 +5085,30 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -6416,7 +5251,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 5ec27a7938383554e902ad9949843f60, type: 2}
   m_StaticBatchInfo:
@@ -6488,7 +5322,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 5ec27a7938383554e902ad9949843f60, type: 2}
   m_StaticBatchInfo:
@@ -6764,7 +5597,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -6904,7 +5736,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 80fdd4ba25389f546962310b3dea6000, type: 2}
   m_StaticBatchInfo:
@@ -7215,7 +6046,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 5ec27a7938383554e902ad9949843f60, type: 2}
   m_StaticBatchInfo:
@@ -7579,150 +6409,102 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -7801,78 +6583,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -7951,78 +6709,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8101,78 +6835,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8459,150 +7169,102 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -8681,78 +7343,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8831,78 +7469,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8981,78 +7595,54 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
+    - serializedVersion: 2
       time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
