@@ -3,6 +3,7 @@
 public class Player : MonoBehaviour {
 	//アタック
 	[SerializeField] ParticleSystem _fire = null;
+	bool _fire_flag = false;
 	float _fire_pos_y = 0;
 	float _fire_pos_z = 0;
 	float _stamina_max = 0;
@@ -99,17 +100,14 @@ public class Player : MonoBehaviour {
 		if ( !_deathblow_prepare && Input.GetButton( "Fire1" ) && _fire_stamina > 0 ) {
 			_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
 			if ( Input.GetButton( "Fire1" ) ) {
-				_wait_time_count = 1;
-			}
-			if ( Input.GetButtonDown( "Fire1" ) ) {
 				_movable = false;
-				_fire.Play( );
 			}
 		}
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
 			_wait_time_count = 0;
 			_movable = true;
 			_fire.Stop( );
+			_fire_flag = false;
 		}
 	}
 
@@ -178,10 +176,10 @@ public class Player : MonoBehaviour {
 	}
 
 	void calStamina ( ) {
-		if ( _fire_stamina < _stamina_max && !Input.GetButton( "Fire1" ) ) {
+		if ( _fire_stamina < _stamina_max && !_fire_flag ) {
 			_fire_stamina += Time.deltaTime * _stamina_speed;
 		}
-		if ( _fire_stamina > 0 && Input.GetButton( "Fire1" ) ) {
+		if ( _fire_stamina > 0 && _fire_flag ) {
 			_fire_stamina -= Time.deltaTime * _stamina_speed;
 		}
 		if ( _fire_stamina > _stamina_max ) {
@@ -210,8 +208,8 @@ public class Player : MonoBehaviour {
 		transform.rotation = _initial_dir;
 	}
 
-	//怪獣の炎を消す
-	public void StopFire ( ) {
-		_fire.Stop( );
+	public void OpenFire ( ) {
+		_fire.Play( );
+		_fire_flag = true;
 	}
 }
