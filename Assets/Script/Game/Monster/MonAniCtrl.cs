@@ -6,7 +6,7 @@ public class MonAniCtrl : MonoBehaviour {
 	[SerializeField] Animator _anim = null;
 	[SerializeField] Player _player = null;
 
-	bool _attack_flag = false;
+	public static bool _attack_flag = false;
 	bool _walk_flag = false;
 	bool _deathblow_flag = false;
 	bool _idle_flag = true;
@@ -32,14 +32,14 @@ public class MonAniCtrl : MonoBehaviour {
 		}
 
 		if ( Player._demirit ) {
-			_anim.SetFloat( "WalkSpeed",0 );
-			_anim.SetFloat( "IdleSpeed",0 );
-			_anim.SetFloat( "AttackSpeed",0 );
+			_anim.SetFloat( "WalkSpeed", 0 );
+			_anim.SetFloat( "IdleSpeed", 0 );
+			_anim.SetFloat( "AttackSpeed", 0 );
 			return;
 		} else {
-			_anim.SetFloat( "WalkSpeed",1.0f );
-			_anim.SetFloat( "IdleSpeed",1.0f );
-			_anim.SetFloat( "AttackSpeed",1.0f );
+			_anim.SetFloat( "WalkSpeed", 1.0f );
+			_anim.SetFloat( "IdleSpeed", 1.0f );
+			_anim.SetFloat( "AttackSpeed", 1.0f );
 		}
 
 		if ( CutIn._cutin_flag ) {
@@ -69,8 +69,8 @@ public class MonAniCtrl : MonoBehaviour {
 			}
 		} else {
 			_walk_flag = false;
-			if (_walk_sound) {
-				walk_sound.Stop ();
+			if ( _walk_sound ) {
+				walk_sound.Stop( );
 				_walk_sound = false;
 			}
 		}

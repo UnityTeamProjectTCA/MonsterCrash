@@ -37,7 +37,6 @@ public class CutIn : MonoBehaviour {
 		}
 		_image.rectTransform.localPosition += new Vector3( _speed, 0, 0 ) * Time.deltaTime;
 		if ( ( int )_image.rectTransform.localPosition.x <= -SCREEN_WIDTH - _width / 2 ) {
-			//_cutin_flag = false;
 			Destroy( gameObject );
 		}
 	}
