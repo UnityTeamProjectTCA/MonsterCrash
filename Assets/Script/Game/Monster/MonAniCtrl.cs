@@ -35,6 +35,11 @@ public class MonAniCtrl : MonoBehaviour {
 			_anim.SetFloat( "WalkSpeed",0 );
 			_anim.SetFloat( "IdleSpeed",0 );
 			_anim.SetFloat( "AttackSpeed",0 );
+            if ( _attack_flag ) { 
+                _idle_flag = false;
+                _walk_flag = false;
+                _attack_flag = false;
+            }
 			return;
 		} else {
 			_anim.SetFloat( "WalkSpeed",1.0f );
