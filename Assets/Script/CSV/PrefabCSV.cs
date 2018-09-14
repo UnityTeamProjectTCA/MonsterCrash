@@ -11,11 +11,12 @@ public class PrefabCSV : LoadCSV {
 		//CutIn
 		CENTRAL_SPEED,
 		NORMAL_SPEED,
-		CENTRAL_X,
+		CENTRAL_POS,
 		//Deathblow
 		DEATHBLOW_POS_Y,
 		DEATHBLOW_POS_Z,
 		DEATHBLOW_SPEED,
+		GRAVITY,
 		CHARGE_SPEED,
 		SWAY_TIME,
 		//Debris
@@ -47,11 +48,12 @@ public class PrefabCSV : LoadCSV {
 
 	public static float _central_speed = 0;
 	public static float _normal_speed = 0;
-	public static float _central_X = 0;
+	public static float _central_pos = 0;
 
 	public static float _deathblow_pos_Y = 0;
 	public static float _deathblow_pos_Z = 0;
 	public static float _deathblow_speed = 0;
+	public static float _gravity = 0;
 	public static float _charge_speed = 0;
 	public static float _sway_time = 0;
 
@@ -86,11 +88,12 @@ public class PrefabCSV : LoadCSV {
 
 		_central_speed		   = float.Parse( _csvData[ ( int )VARIABLE_NAME.CENTRAL_SPEED ][ ( int )PROPERTY.VALUE ] );
 		_normal_speed		   = float.Parse( _csvData[ ( int )VARIABLE_NAME.NORMAL_SPEED ][ ( int )PROPERTY.VALUE ] );
-		_central_X			   = float.Parse( _csvData[ ( int )VARIABLE_NAME.CENTRAL_X ][ ( int )PROPERTY.VALUE ] );
+		_central_pos			   = float.Parse( _csvData[ ( int )VARIABLE_NAME.CENTRAL_POS ][ ( int )PROPERTY.VALUE ] );
 
 		_deathblow_pos_Y	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.DEATHBLOW_POS_Y ][ ( int )PROPERTY.VALUE ] );
 		_deathblow_pos_Z	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.DEATHBLOW_POS_Z ][ ( int )PROPERTY.VALUE ] );
 		_deathblow_speed	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.DEATHBLOW_SPEED ][ ( int )PROPERTY.VALUE ] );
+		_gravity         	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.GRAVITY ][ ( int )PROPERTY.VALUE ] );
 		_charge_speed		   = float.Parse( _csvData[ ( int )VARIABLE_NAME.CHARGE_SPEED ][ ( int )PROPERTY.VALUE ] );
 		_sway_time			   = float.Parse( _csvData[ ( int )VARIABLE_NAME.SWAY_TIME ][ ( int )PROPERTY.VALUE ] );
 

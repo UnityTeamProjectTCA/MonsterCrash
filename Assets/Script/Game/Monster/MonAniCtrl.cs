@@ -47,7 +47,7 @@ public class MonAniCtrl : MonoBehaviour {
 			_anim.SetFloat( "AttackSpeed", 1.0f );
 		}
 
-		if ( CutIn._cutin_flag ) {
+		if ( CutIn_Vertical._cutin_flag ) {
 			_deathblow_flag = true;
 			_idle_flag = false;
 			_walk_flag = false;
@@ -98,6 +98,6 @@ public class MonAniCtrl : MonoBehaviour {
 	}
 
 	void onMotionEnd ( ) {
-		CutIn._cutin_flag = false;
+		CutIn_Vertical._cutin_flag = false;
 	}
 }

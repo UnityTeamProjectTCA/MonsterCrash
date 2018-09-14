@@ -54,7 +54,7 @@ public class CameraScript : MonoBehaviour {
 		if ( !Player._playable ) {
 			return;
 		}
-		if ( CutIn._cutin_flag ) {
+		if ( CutIn_Vertical._cutin_flag ) {
 			return;
 		}
 

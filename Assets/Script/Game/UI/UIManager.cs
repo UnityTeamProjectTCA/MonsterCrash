@@ -79,7 +79,7 @@ public class UIManager : MonoBehaviour {
 		showBuffUI( );
 		showDeathBlowCount( );
 
-		if ( CutIn._cutin_flag ) {
+		if ( CutIn_Vertical._cutin_flag ) {
 			return;
 		}
 		calTime( );

@@ -86,7 +86,7 @@ public class Player : MonoBehaviour {
 			return;
 		}
 
-		if ( CutIn._cutin_flag ) {
+		if ( CutIn_Vertical._cutin_flag ) {
 			_fire.Stop( );
 			return;
 		}
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour {
 				//必殺技生成
 				Instantiate( _deathblow_bullet, transform.position + transform.up * 10, Quaternion.identity );
 				//カットイン生成
-				CutIn._cutin_flag = true;
+				CutIn_Vertical._cutin_flag = true;
 				GameObject cutin = Instantiate( _cutin );
 				cutin.transform.SetParent( _canvas.transform, false );
 			}
@@ -217,7 +217,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollisionEnter ( Collision other ) {
-		if ( other.gameObject.tag == "enemybullet" && !CutIn._cutin_flag ) {
+		if ( other.gameObject.tag == "enemybullet" && !CutIn_Vertical._cutin_flag ) {
 			_demirit = true;
 		}
 	}
