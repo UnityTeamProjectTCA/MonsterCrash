@@ -76,7 +76,6 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
-		Debug.Log (_playable);
 		if ( !_playable ) {
 			_fire.Stop( );
 			return;
