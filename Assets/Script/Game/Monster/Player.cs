@@ -52,15 +52,15 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		_fire_pos_y      = GameCSV._fire_pos_y;
-		_fire_pos_z      = GameCSV._fire_pos_z;
-		_stamina_max     = GameCSV._stamina_max;
-		_stamina_speed   = GameCSV._stamina_speed;
+		_fire_pos_y = GameCSV._fire_pos_y;
+		_fire_pos_z = GameCSV._fire_pos_z;
+		_stamina_max = GameCSV._stamina_max;
+		_stamina_speed = GameCSV._stamina_speed;
 		_origin_velocity = GameCSV._origin_velocity;
 		_raised_velocity = GameCSV._raised_velocity;
-		_speedup_time    = GameCSV._speedup_time;
-		_rangeup_time    = GameCSV._rangeup_time;
-		_demirit_time    = GameCSV._demirit_time;
+		_speedup_time = GameCSV._speedup_time;
+		_rangeup_time = GameCSV._rangeup_time;
+		_demirit_time = GameCSV._demirit_time;
 
 		_deathblow_count = 1;
 		_speedup_count = _speedup_time;
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour {
 	void fireMakeing ( ) {
 		if ( !_deathblow_prepare && Input.GetButton( "Fire1" ) && _fire_stamina > 0 ) {
 			_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
-			if ( Input.GetButton( "Fire1" ) ) {
+			if ( MonAniCtrl._attack_flag ) {
 				_movable = false;
 			}
 		}
@@ -205,9 +205,10 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	void Demirit( ) {
+	void Demirit ( ) {
 		_demirit_time_count -= Time.deltaTime;
-
+        _fire.Stop( );
+        _fire_flag = false;
 		if ( _demirit_time_count < 0 ) {
 			_playable = true;
 			_demirit = false;
@@ -215,10 +216,10 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter( Collision other ) {
+	void OnCollisionEnter ( Collision other ) {
 		if ( other.gameObject.tag == "enemybullet" && !CutIn._cutin_flag ) {
 			_demirit = true;
-		}	
+		}
 	}
 
 

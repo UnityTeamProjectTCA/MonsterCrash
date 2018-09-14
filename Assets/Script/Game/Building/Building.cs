@@ -11,9 +11,9 @@ public class Building : MonoBehaviour {
 	}
 
 	[SerializeField] GameObject _explosion = null;
-	[SerializeField] GameObject _debris = null;
-	[SerializeField] AudioSource breaking_SE;
-	int _debris_num = 0;
+	//[SerializeField] GameObject _debris = null;
+	[SerializeField] AudioSource breaking_SE = null;
+	//int _debris_num = 0;
 	float _stop_time_small1 = 0;
 	float _stop_time_small2 = 0;
 
@@ -22,7 +22,7 @@ public class Building : MonoBehaviour {
 
 
 	void Start ( ) {
-		_debris_num = PrefabCSV._debris_num;
+		//_debris_num = PrefabCSV._debris_num;
 		_stop_time_small1 = PrefabCSV._stop_time_small1;
 		_stop_time_small2 = PrefabCSV._stop_time_small2;
 		
@@ -109,14 +109,16 @@ public class Building : MonoBehaviour {
 
 	//建物が壊れる瞬間の処理-------------------------------------------------------
 	void BuildingCrash ( ) {
-		//breaking_SE.Play( );
+		breaking_SE.Play( );
 
 		//瓦礫生成
-		for ( int i = 0; i < _debris_num; i++ ) {
+        //モデルが無いため一時的にコメントアウト
+		/*for ( int i = 0; i < _debris_num; i++ ) {
 			Instantiate( _debris, transform.position, Quaternion.identity );
-		}
+		}*/
 
-		Instantiate( _explosion, transform.position, Quaternion.identity );     //爆発生成
+        Vector3 explosion_shift_pos = new Vector3( 5, 0, 0 ); //エフェクトの中心座標がずれているための緊急措置
+		Instantiate( _explosion, transform.position + explosion_shift_pos, Quaternion.identity );     //爆発生成
 
 
 		Destroy( gameObject );                                                  //建物削除
