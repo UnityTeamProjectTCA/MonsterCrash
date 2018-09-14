@@ -112,11 +112,9 @@ public class Player : MonoBehaviour {
 
 
 	void fireMakeing ( ) {
-		if ( !_deathblow_prepare && Input.GetButton( "Fire1" ) && _fire_stamina > 0 ) {
-			_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
-			if ( MonAniCtrl._attack_flag ) {
-				_movable = false;
-			}
+		_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
+		if ( MonAniCtrl._attack_flag ) {
+			_movable = false;
 		}
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
 			_wait_time_count = 0;
