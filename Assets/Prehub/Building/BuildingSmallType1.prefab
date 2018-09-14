@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca425d096e2264645a5d02a9ea908896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosion: {fileID: 1788537726945200, guid: a57025740b763464d95229b152919336, type: 2}
+  _explosion: {fileID: 1522075315891076, guid: 93c3ab1d0516e5b4e99095ba8ec4f9e2, type: 2}
   _debris: {fileID: 1042552167552068, guid: be35b28acc10042eba0021fd902b3b01, type: 2}
   breaking_SE: {fileID: 0}
 --- !u!208 &208847832770963700
