@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class Fire : MonoBehaviour {
-	[SerializeField] ParticleSystem _fire;
+	[SerializeField] ParticleSystem _fire = null;
 	[SerializeField] GameObject _player = null;
 	[SerializeField] ScoreManager _score_manager = null;
 
@@ -18,7 +18,8 @@ public class Fire : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
-		transform.forward = _player.transform.forward;
+       
+        transform.forward = _player.transform.forward;
 		rangeUpBuff( );
 	}
 
