@@ -207,7 +207,8 @@ public class Player : MonoBehaviour {
 
 	void Demirit ( ) {
 		_demirit_time_count -= Time.deltaTime;
-
+        _fire.Stop( );
+        _fire_flag = false;
 		if ( _demirit_time_count < 0 ) {
 			_playable = true;
 			_demirit = false;
