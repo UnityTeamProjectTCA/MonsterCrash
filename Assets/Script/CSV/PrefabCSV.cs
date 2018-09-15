@@ -24,6 +24,7 @@ public class PrefabCSV : LoadCSV {
 		DEBRIS_ADDPOWER,
 		//EnemyAI
 		BULLET_POS,
+		BULLET_HEIGHT,
 		ATTACK_WAIT_TIME,
 		ATTACK_TIME,
 		ATTACK_DISTANCE,
@@ -61,6 +62,7 @@ public class PrefabCSV : LoadCSV {
 	public static float _debris_addpower = 0;
 
 	public static float _bullet_pos = 0;
+	public static float _bullet_height = 0;
 	public static float _attack_wait_time = 0;
 	public static float _attack_time = 0;
 	public static float _attack_distance = 0;
@@ -101,6 +103,7 @@ public class PrefabCSV : LoadCSV {
 		_debris_addpower	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.DEBRIS_ADDPOWER ][ ( int )PROPERTY.VALUE ] );
 
 		_bullet_pos			   = float.Parse( _csvData[ ( int )VARIABLE_NAME.BULLET_POS ][ ( int )PROPERTY.VALUE ] );
+		_bullet_height		   = float.Parse( _csvData[ ( int )VARIABLE_NAME.BULLET_HEIGHT ][ ( int )PROPERTY.VALUE ] );
 		_attack_wait_time	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.ATTACK_WAIT_TIME ][ ( int )PROPERTY.VALUE ] );
 		_attack_time		   = float.Parse( _csvData[ ( int )VARIABLE_NAME.ATTACK_TIME ][ ( int )PROPERTY.VALUE ] );
 		_attack_distance	   = float.Parse( _csvData[ ( int )VARIABLE_NAME.ATTACK_DISTANCE ][ ( int )PROPERTY.VALUE ] );

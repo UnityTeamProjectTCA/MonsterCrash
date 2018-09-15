@@ -18,6 +18,7 @@ debris_disappear_time,3
 debris_addpower,5000
 //EnemyAI
 bullet_pos,3
+bullet_height,3
 attack_wait_time,6
 attack_time,100
 attack_distance,40
@@ -26,7 +27,7 @@ avoid_distance,30
 death_rotate_speed,1000
 death_disappear_time,1
 //EnemyBullet
-shot_speed,1
+shot_speed,60
 //SCORE_PLUS
 raise_speed,100
 font_disappear_time,1

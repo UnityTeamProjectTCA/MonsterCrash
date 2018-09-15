@@ -214,7 +214,7 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter ( Collision other ) {
+	private void OnParticleCollision ( GameObject other ) {
 		if ( other.gameObject.tag == "enemybullet" && !CutIn_Vertical._cutin_flag ) {
 			_demirit = true;
 		}

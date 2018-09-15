@@ -4,7 +4,6 @@ public class DeathBlow : MonoBehaviour {
 	const float CHARGE_SIZE = 3;
 
 	[SerializeField] GameObject _effect = null;
-	[SerializeField] AudioSource _deathblow_se = null;
 
 	float _deathblow_pos_y = 0;
 	float _deathblow_pos_z = 0;
@@ -17,6 +16,7 @@ public class DeathBlow : MonoBehaviour {
 	GameObject _player_obj = null;
 	Player _player = null;
 	ParticleSystem _deathblow_effect = null;
+	AudioSource _deathblow_se = null;
 	float _deathblow_scale = 0;
 
 	// Use this for initialization
