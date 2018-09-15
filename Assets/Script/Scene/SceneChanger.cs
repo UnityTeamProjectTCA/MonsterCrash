@@ -3,25 +3,28 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
 	[SerializeField] AudioSource _submit_SE = null;
-
+	bool _sound_flag = false;
 	string _scene = "";
 
 	// Use this for initialization
 	void Start ( ) {
-		if ( SceneManager.GetActiveScene( ).name == "Title" ) {
+		string _scene_name = SceneManager.GetActiveScene( ).name;
+		if ( _scene_name == "Title" ) {
 			_scene = TitleCSV._target_scene;
 		}
-		if ( SceneManager.GetActiveScene( ).name == "Result" ) {
+		if ( _scene_name == "Result" ) {
 			_scene = ResultCSV._target_scene;
 		}
 	}
 
 	// Update is called once per frame
 	void Update ( ) {
-		if ( Input.GetButtonDown( "Submit" ) ) {
+		if ( Input.GetButtonDown( "Submit" ) && !_sound_flag ) {
 			_submit_SE.Play( );
+			_sound_flag = true;
 		}
 		if ( _submit_SE.time >= _submit_SE.clip.length ) {
+			_sound_flag = false;
 			sceneChange( _scene );
 		}
 	}

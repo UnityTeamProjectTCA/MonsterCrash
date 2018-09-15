@@ -14,8 +14,8 @@ public class EnemyDied : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		_death_rotate_speed = PrefabCSV._death_rotate_speed;
-		_disappear_time = PrefabCSV._death_disappear_time;
+		_death_rotate_speed = GameCSV._death_rotate_speed;
+		_disappear_time = GameCSV._death_disappear_time;
 
 		_player = GameObject.FindGameObjectWithTag( "Player" );
 		_start_pos = transform.position;

@@ -21,13 +21,13 @@ public class DeathBlow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		_deathblow_pos_y = PrefabCSV._deathblow_pos_Y;
-		_deathblow_pos_z = PrefabCSV._deathblow_pos_Z;
+		_deathblow_pos_y = GameCSV._deathblow_pos_Y;
+		_deathblow_pos_z = GameCSV._deathblow_pos_Z;
 
-		_deathblow_speed = PrefabCSV._deathblow_speed;
-		_gravity = PrefabCSV._gravity;
-		_charge_speed = PrefabCSV._charge_speed;
-		_sway_time = PrefabCSV._sway_time;
+		_deathblow_speed = GameCSV._deathblow_speed;
+		_gravity = GameCSV._gravity;
+		_charge_speed = GameCSV._charge_speed;
+		_sway_time = GameCSV._sway_time;
 
 		_player_obj = GameObject.FindGameObjectWithTag( "Player" );
 		_player = _player_obj.GetComponent<Player>( );

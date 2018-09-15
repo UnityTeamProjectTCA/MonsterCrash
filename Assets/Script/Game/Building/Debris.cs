@@ -9,8 +9,8 @@ public class Debris : MonoBehaviour {
 	GameObject _player = null;
 	// Use this for initialization
 	void Start( ) {
-		_disappear_time = PrefabCSV._debris_disappear_time;
-		_power = PrefabCSV._debris_addpower;
+		_disappear_time = GameCSV._debris_disappear_time;
+		_power = GameCSV._debris_addpower;
 
 		_player = GameObject.FindGameObjectWithTag( "Player" );
 		

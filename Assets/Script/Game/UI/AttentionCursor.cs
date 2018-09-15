@@ -11,9 +11,9 @@ public class AttentionCursor : MonoBehaviour {
 	RectTransform _rect_transform = null;
 	// Use this for initialization
 	void Start( ) {
-		_min_size = PrefabCSV._min_size;
-		_speed = PrefabCSV._change_speed;
-		_wait_time = PrefabCSV._wait_time;
+		_min_size = GameCSV._min_size;
+		_speed = GameCSV._change_speed;
+		_wait_time = GameCSV._wait_time;
 
 		_rect_transform = GetComponent<RectTransform>( );
 

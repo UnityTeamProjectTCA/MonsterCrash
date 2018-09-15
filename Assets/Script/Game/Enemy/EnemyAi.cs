@@ -34,12 +34,12 @@ public class EnemyAi : MonoBehaviour {
 
 	// Use this for initialization
 	void Start( ) {
-		_bullet_pos = PrefabCSV._bullet_pos;
-		_bullet_height = PrefabCSV._bullet_height;
-		_attack_wait_time = PrefabCSV._attack_wait_time;
-		_attack_time = PrefabCSV._attack_time;
-		_avoid_distance = PrefabCSV._avoid_distance;
-		_attack_distance = PrefabCSV._attack_distance;
+		_bullet_pos = GameCSV._bullet_pos;
+		_bullet_height = GameCSV._bullet_height;
+		_attack_wait_time = GameCSV._attack_wait_time;
+		_attack_time = GameCSV._attack_time;
+		_avoid_distance = GameCSV._avoid_distance;
+		_attack_distance = GameCSV._attack_distance;
 
 		_enemy_attack_sound = GameObject.Find( "SE_Enemy_Attack" ).GetComponent<AudioSource>( );
 		GameObject[ ] escape_area = GameObject.FindGameObjectsWithTag( "EscapeArea" );
@@ -192,7 +192,7 @@ public class EnemyAi : MonoBehaviour {
 	}
 
     public void BulletInstantiate( ) { 
-        Vector3 shell_pos = transform.position + ( _player.transform.position - transform.position ).normalized * _bullet_pos + transform.up *3;
+        Vector3 shell_pos = transform.position + ( _player.transform.position - transform.position ).normalized * _bullet_pos + transform.up * _bullet_height;
 	    Instantiate( _bullet, shell_pos, Quaternion.identity );
         _enemy_attack_sound.Play( );
 

@@ -17,9 +17,9 @@ public class CutIn_Horizontal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		_central_speed = PrefabCSV._central_speed;
-		_normal_speed = PrefabCSV._normal_speed;
-		_central_pos = PrefabCSV._central_pos;
+		_central_speed = GameCSV._central_speed;
+		_normal_speed = GameCSV._normal_speed;
+		_central_pos = GameCSV._central_pos;
 
 		_image = GetComponent<Image>( );
 		_width = _image.rectTransform.sizeDelta.x;

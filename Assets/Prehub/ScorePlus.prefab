@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114298812160326426}
   - component: {fileID: 114011339967849128}
   - component: {fileID: 114525234570201636}
+  - component: {fileID: 114609342762392132}
   m_Layer: 5
   m_Name: ScorePlus
   m_TagString: Untagged
@@ -41,9 +42,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed3daeabe2191f940b2813926bdfe7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 100
-  disappear_speed: 1.5
-  _time: 1
+  _raise_speed: 0
+  _disappear_time: 0
 --- !u!114 &114298812160326426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -88,6 +88,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12d21fbc684dc145a0fdb57b6b2bd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114609342762392132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359034626463372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!222 &222655887913194382
 CanvasRenderer:
   m_ObjectHideFlags: 1

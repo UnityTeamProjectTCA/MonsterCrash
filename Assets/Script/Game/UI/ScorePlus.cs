@@ -10,8 +10,8 @@ public class ScorePlus : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		_raise_speed = PrefabCSV._raise_speed;
-		_disappear_time = PrefabCSV._font_disappear_time;
+		_raise_speed = GameCSV._raise_speed;
+		_disappear_time = GameCSV._font_disappear_time;
 
 		_score = GameObject.Find( "Score" ).GetComponent<Text>( );
 		_text = GetComponent<Text>( );

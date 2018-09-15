@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 366166449}
   - component: {fileID: 366166448}
   m_Layer: 0
-  m_Name: Title
+  m_Name: ToTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,7 +944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e323eefd18dc2474ebc3ad28478bf87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFile: {fileID: 4900000, guid: 5627146bef9a3fa429eb83be0bd1a9b8, type: 3}
 --- !u!4 &856812955
 Transform:
   m_ObjectHideFlags: 0

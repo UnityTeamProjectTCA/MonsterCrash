@@ -22,9 +22,9 @@ public class Building : MonoBehaviour {
 
 
 	void Start ( ) {
-		//_debris_num = PrefabCSV._debris_num;
-		_stop_time_small1 = PrefabCSV._stop_time_small1;
-		_stop_time_small2 = PrefabCSV._stop_time_small2;
+		//_debris_num = GameCSV._debris_num;
+		_stop_time_small1 = GameCSV._stop_time_small1;
+		_stop_time_small2 = GameCSV._stop_time_small2;
 		
 		_score_manager = GameObject.Find( "ScoreManager" ).GetComponent<ScoreManager>( );
 	}

@@ -2,11 +2,15 @@
 
 public class DeathJudge : MonoBehaviour {
 	AudioSource _enemy_death_sound;
+	EnemyDied _enemy_died = null;
+	BoxCollider _collider = null;
 
 	bool _death_flag = false;
 
 	void Awake ( ) {
-		GetComponent<EnemyDied>( ).enabled = false;
+		_enemy_died = GetComponent<EnemyDied>( );
+		_collider = GetComponent<BoxCollider>( );
+		_enemy_died.enabled = false;
 	}
 
 	// Use this for initialization
@@ -17,8 +21,8 @@ public class DeathJudge : MonoBehaviour {
 	// Update is called once per frame
 	void Update ( ) {
 		if ( _death_flag ) {
-			GetComponent<EnemyDied>( ).enabled = true;
-			GetComponent<BoxCollider>( ).enabled = false;
+			_enemy_died.enabled = true;
+			_collider.enabled = false;
 			return;
 		}
 	}

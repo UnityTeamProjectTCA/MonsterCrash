@@ -6,7 +6,7 @@ public class EnemyBullet : MonoBehaviour {
 	GameObject _player = null;
 	// Use this for initialization
 	void Start ( ) {
-		_shot_speed = PrefabCSV._shot_speed;
+		_shot_speed = GameCSV._shot_speed;
 
 		_player = GameObject.FindGameObjectWithTag( "Player" );
 	}

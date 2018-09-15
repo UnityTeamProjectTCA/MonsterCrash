@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder( -2 )]
 
@@ -10,7 +11,7 @@ public class LoadCSV : MonoBehaviour {
 		VALUE
 	};
 
-	[SerializeField] TextAsset csvFile = null;
+	[SerializeField] WWW www = null;
 	protected List<string[ ]> _csvData = new List<string[ ]>( );
 
 	// Use this for initialization
@@ -22,7 +23,10 @@ public class LoadCSV : MonoBehaviour {
 	}
 
 	protected void loadCSV ( ) {
-		StringReader reader = new StringReader( csvFile.text );
+		www = new WWW( Application.streamingAssetsPath + "/CSV/" + SceneManager.GetActiveScene( ).name + ".csv" );
+		while ( !www.isDone ){
+		}
+		StringReader reader = new StringReader( www.text );
 
 		while ( reader.Peek( ) > -1 ) {
 			string line = reader.ReadLine( );

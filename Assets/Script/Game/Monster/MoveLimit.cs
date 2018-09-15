@@ -13,6 +13,8 @@ public class MoveLimit : MonoBehaviour {
 
 	[SerializeField] GameObject _player = null;
 	[SerializeField] GameObject[ ] _wall = new GameObject[ 4 ];
+	Renderer _renderer = null;
+
 
 	float _shift_pos = 0;
 
@@ -20,6 +22,7 @@ public class MoveLimit : MonoBehaviour {
 	void Start ( ) {
 		_shift_pos = GameCSV._shift_pos;
 
+		_renderer = GetComponent<Renderer>( );
 		WallArrangement( );
 	}
 
@@ -30,8 +33,8 @@ public class MoveLimit : MonoBehaviour {
 
 	void moveLimit ( ) {
 		//マップのスケールによって移動限界位置を調整
-		float moveable_x = GetComponent<Renderer>( ).bounds.size.x / 4;
-		float moveable_z = GetComponent<Renderer>( ).bounds.size.z / 4;
+		float moveable_x = _renderer.bounds.size.x / 4;
+		float moveable_z = _renderer.bounds.size.z / 4;
 
 		//怪獣が見えない壁よりさきに行かないようにする
 		if ( _player.transform.position.x >= transform.position.x + moveable_x ) {
@@ -49,8 +52,8 @@ public class MoveLimit : MonoBehaviour {
 	}
 
 	void WallArrangement( ) { 
-		float moveable_x = GetComponent<Renderer>( ).bounds.size.x / 4;
-		float moveable_z = GetComponent<Renderer>( ).bounds.size.z / 4;
+		float moveable_x = _renderer.bounds.size.x / 4;
+		float moveable_z = _renderer.bounds.size.z / 4;
 
 		_wall[ ( int )WALL.LEFT ].transform.position = new Vector3( transform.position.x + moveable_x + _shift_pos, WALL_POS_Y, 0 );
 		_wall[ ( int )WALL.LEFT ].transform.Rotate( new Vector3( 0, WALL_RIGHT_ANGLE, 0 ) );

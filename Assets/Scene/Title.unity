@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 379103136}
   - component: {fileID: 379103135}
   - component: {fileID: 379103134}
+  - component: {fileID: 379103137}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -381,6 +382,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379103132}
+--- !u!114 &379103137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379103132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3a396acb9c57c47b65a501bf5eb34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _submit_SE: {fileID: 2027868351}
 --- !u!1 &431085200
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +490,6 @@ GameObject:
   m_Component:
   - component: {fileID: 431604603}
   - component: {fileID: 431604602}
-  - component: {fileID: 431604605}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -548,18 +560,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &431604605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 431604601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3a396acb9c57c47b65a501bf5eb34e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _submit_SE: {fileID: 2027868351}
 --- !u!1 &494496233
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +857,6 @@ GameObject:
   - component: {fileID: 1149833139}
   - component: {fileID: 1149833138}
   - component: {fileID: 1149833137}
-  - component: {fileID: 1149833141}
   m_Layer: 5
   m_Name: FireLoop
   m_TagString: Fire
@@ -945,101 +944,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149833135}
---- !u!82 &1149833141
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149833135}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 415ea36b70cd340d38aa279b6bafda43, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.7
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!1 &1151257018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363ddfce2db0a204f9b735de65b9d6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFile: {fileID: 4900000, guid: 61d1da1d1d8654042ac0028cde90d1f5, type: 3}
 --- !u!4 &1151257020
 Transform:
   m_ObjectHideFlags: 0
