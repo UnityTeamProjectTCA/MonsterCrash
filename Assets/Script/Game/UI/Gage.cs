@@ -13,6 +13,6 @@ public class Gage : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
-		_slider.value = _player.getFireStamina( );
+		transform.localScale = new Vector3( _player.getFireStamina( ) / 100, 1, 0 );
 	}
 }

@@ -137,8 +137,9 @@ public class Player : MonoBehaviour {
 	void fireMakeing ( ) {
 		_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
-			_wait_time_count = 0;
 			_fire.Stop( );
+		}
+		if ( Input.GetButtonUp( "Fire1" ) ) {
 			_fire_flag = false;
 		}
 	}
