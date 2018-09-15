@@ -5,8 +5,8 @@ stamina_max,100
 stamina_speed,10
 origin_velocity,30
 raised_velocity,60
-speedup_time,3
-rangeup_time,3
+speedup_time,5
+rangeup_time,5
 demirit_time,1
 //Camera
 radius,15

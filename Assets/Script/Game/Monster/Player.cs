@@ -106,7 +106,7 @@ public class Player : MonoBehaviour {
 		}
 
 		if ( _demirit ) {
-			Demirit( );
+			//Demirit( );
 			return;
 		}
 
@@ -233,11 +233,11 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	private void OnParticleCollision ( GameObject other ) {
-		if ( other.gameObject.tag == "enemybullet" && !CutIn_Vertical._cutin_flag ) {
-			_demirit = true;
-		}
-	}
+	//private void OnParticleCollision ( GameObject other ) {
+	//	if ( other.gameObject.tag == "enemybullet" && !CutIn_Vertical._cutin_flag ) {
+	//		_demirit = true;
+	//	}
+	//}
 
 
 	public float getFireStamina ( ) {

@@ -3,8 +3,8 @@ min_size,0.5
 change_speed,120
 wait_time,3
 //CutIn
-central_speed,-300
-normal_speed,-3000
+central_speed,500
+normal_speed,5000
 central_pos,100
 //Deathblow
 deathblow_pos_Y,8

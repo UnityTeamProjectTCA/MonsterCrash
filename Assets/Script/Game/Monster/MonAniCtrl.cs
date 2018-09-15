@@ -31,21 +31,21 @@ public class MonAniCtrl : MonoBehaviour {
 			return;
 		}
 
-		if ( Player._demirit ) {
-			_anim.SetFloat( "WalkSpeed",0 );
-			_anim.SetFloat( "IdleSpeed",0 );
-			_anim.SetFloat( "AttackSpeed",0 );
-            if ( _attack_flag ) { 
-                _idle_flag = false;
-                _walk_flag = false;
-                _attack_flag = false;
-            }
-			return;
-		} else {
-			_anim.SetFloat( "WalkSpeed", 1.0f );
-			_anim.SetFloat( "IdleSpeed", 1.0f );
-			_anim.SetFloat( "AttackSpeed", 1.0f );
-		}
+		//if ( Player._demirit ) {
+		//	_anim.SetFloat( "WalkSpeed",0 );
+		//	_anim.SetFloat( "IdleSpeed",0 );
+		//	_anim.SetFloat( "AttackSpeed",0 );
+        //    if ( _attack_flag ) { 
+        //        _idle_flag = false;
+        //        _walk_flag = false;
+        //        _attack_flag = false;
+        //    }
+		//	return;
+		//} else {
+		//	_anim.SetFloat( "WalkSpeed", 1.0f );
+		//	_anim.SetFloat( "IdleSpeed", 1.0f );
+		//	_anim.SetFloat( "AttackSpeed", 1.0f );
+		//}
 
 		if ( CutIn_Vertical._cutin_flag ) {
 			_deathblow_flag = true;
