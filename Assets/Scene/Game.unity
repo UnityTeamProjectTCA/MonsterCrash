@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fire: {fileID: 334906273}
-  _deathblow_bullet: {fileID: 1777899457434230, guid: 5ced27b91f44bac4fa605eb019f00a5e,
+  _deathblow_bullet: {fileID: 1369706426317724, guid: d95cb4ade210b384ea7c9ef1aad695cc,
     type: 2}
   _canvas: {fileID: 823498551}
   _cutin: {fileID: 1635020195650086, guid: 414ab73917892cb4ba8f50608684e99a, type: 2}

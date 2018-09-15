@@ -120,6 +120,9 @@ public class UIManager : MonoBehaviour {
 	}
 
 	void timeUp ( ) {
+		Player._speedup_flag = false;
+		Player._rangeup_flag = false;
+
 		if ( GameObject.FindGameObjectWithTag( "Finish" ) == null ) {
 			GameObject time_up = Instantiate( _time_up );
 			time_up.transform.SetParent( transform, false );

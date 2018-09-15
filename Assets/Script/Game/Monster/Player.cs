@@ -74,6 +74,30 @@ public class Player : MonoBehaviour {
 		_initial_dir = transform.rotation;
 	}
 
+	void FixedUpdate ( ) {
+		if ( !_playable ) {
+			return;
+		}
+
+		if ( _demirit ) {
+			return;
+		}
+
+		if ( CutIn_Vertical._cutin_flag ) {
+			return;
+		}
+
+		if ( MonAniCtrl._attack_flag ) {
+			return;
+		}
+
+		if ( !_movable ) {
+			return;
+		}
+
+		charaMove( );
+	}
+
 	// Update is called once per frame
 	void Update ( ) {
 		if ( !_playable ) {
@@ -107,18 +131,13 @@ public class Player : MonoBehaviour {
 			return;
 		}
 
-		charaMove( );
 	}
 
 
 	void fireMakeing ( ) {
 		_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
-		if ( MonAniCtrl._attack_flag ) {
-			_movable = false;
-		}
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
 			_wait_time_count = 0;
-			_movable = true;
 			_fire.Stop( );
 			_fire_flag = false;
 		}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class DeathBlow : MonoBehaviour {
-	const float CHARGE_SIZE = 3;
+	const float CHARGE_SIZE = 2;
 
 	[SerializeField] GameObject _effect = null;
 
@@ -34,7 +34,7 @@ public class DeathBlow : MonoBehaviour {
 		_deathblow_effect = GameObject.Find( "Deathblow" ).GetComponent<ParticleSystem>( );
 		_deathblow_se = GameObject.Find( "SE_hissatsu" ).GetComponent<AudioSource>( );
 
-	transform.forward = _player.transform.forward;
+		transform.forward = _player.transform.forward;
 		transform.localScale = Vector3.zero;
 	}
 
