@@ -74,30 +74,6 @@ public class Player : MonoBehaviour {
 		_initial_dir = transform.rotation;
 	}
 
-	void FixedUpdate ( ) {
-		if ( !_playable ) {
-			return;
-		}
-
-		if ( _demirit ) {
-			return;
-		}
-
-		if ( CutIn_Vertical._cutin_flag ) {
-			return;
-		}
-
-		if ( MonAniCtrl._attack_flag ) {
-			return;
-		}
-
-		if ( !_movable ) {
-			return;
-		}
-
-		charaMove( );
-	}
-
 	// Update is called once per frame
 	void Update ( ) {
 		if ( !_playable ) {
@@ -131,6 +107,11 @@ public class Player : MonoBehaviour {
 			return;
 		}
 
+		if ( MonAniCtrl._attack_flag ) {
+			return;
+		}
+
+		charaMove( );
 	}
 
 
@@ -171,7 +152,7 @@ public class Player : MonoBehaviour {
 			Quaternion targetRotation = Quaternion.LookRotation( move_dir );
 			transform.rotation = Quaternion.Slerp( transform.rotation, targetRotation, Time.deltaTime * 20 );
 			_speed = move_dir * _velocity;
-			transform.localPosition += _speed * Time.deltaTime;
+			transform.position += Vector3.Scale( _speed, new Vector3( 1, 0, 1 ) ) * Time.deltaTime;
 		}
 	}
 

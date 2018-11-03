@@ -86,5 +86,5 @@ raise_speed,100
 font_disappear_time,1
 //Building
 debris_num,3
-stop_time_small1,0.05
+stop_time_small1,0.15
 stop_time_small2,0.1

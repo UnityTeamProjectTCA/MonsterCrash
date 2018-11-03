@@ -23,7 +23,7 @@ public class LoadCSV : MonoBehaviour {
 	}
 
 	protected void loadCSV ( ) {
-		www = new WWW( Application.streamingAssetsPath + "/CSV/" + SceneManager.GetActiveScene( ).name + ".csv" );
+		www = new WWW("file:///" + Application.streamingAssetsPath + "/CSV/" + SceneManager.GetActiveScene( ).name + ".csv" );
 		while ( !www.isDone ){
 		}
 		StringReader reader = new StringReader( www.text );

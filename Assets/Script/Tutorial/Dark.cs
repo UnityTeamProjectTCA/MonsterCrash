@@ -10,15 +10,18 @@ public class Dark : MonoBehaviour {
 		
 	[SerializeField] float _setTime = 2f;   		//暗転する時間
 	[SerializeField] float _fade_speed = 1f;		//フェードイン・アウトする速さ
-	[SerializeField] Player _player = null;
+
 
 	DARK_STATUS _dark_status = DARK_STATUS.FADE_IN;
 	float _time = 0;                            	//暗転の残り時間
 	bool _dark = false;								//暗転しているかどうか
+    Image _imag = null;                             //自身の画像
 	Color _brack = new Color ( 0, 0, 0, 0 );		//黒色の板
 
 	// Use this for initialization
 	void Start( ) {
+        _imag = gameObject.GetComponent< Image >( );
+        _imag.color = new Color( 0, 0, 0, 0 );
 	}
 	
 	// Update is called once per frame
@@ -26,7 +29,6 @@ public class Dark : MonoBehaviour {
 		DarkFlow( );
 	}
 
-	//ステータスでやったほうがいいかも
 	//暗転(初期位置に戻す)------------------------------------------------------
 	void DarkFlow( ) {
 		if ( !_dark ) {
@@ -56,7 +58,7 @@ public class Dark : MonoBehaviour {
 	//暗転（フェードイン）-----------------------------------
 	void DarkFadeIn( ) {
 		_brack.a += _fade_speed * Time.deltaTime;
-		gameObject.GetComponent<Image>( ).color = _brack;
+		_imag.color = _brack;
 
 		if ( _brack.a > 1 ) {
 			_dark_status = DARK_STATUS.WAIT;
@@ -68,10 +70,15 @@ public class Dark : MonoBehaviour {
 	//暗転（待機）------------------------------------
 	void DarkWait( ) {
 		_time -= Time.deltaTime;
-		_player.ResetPosAndDir( );
 
 		if ( _time < 0 ) {
-			_dark_status = DARK_STATUS.FADE_OUT;
+			//_dark_status = DARK_STATUS.FADE_OUT;
+
+            //フェードアウトは使用しない時の処理-----------
+            //_imag.color = new Color( 0, 0, 0, 0 );
+            _dark_status = DARK_STATUS.FADE_IN;
+            _dark = false;
+            //---------------------------------------------
 		}
 	}
 	//---------------------------------------------
@@ -80,7 +87,7 @@ public class Dark : MonoBehaviour {
 	//暗転（フェードアウト）------------------------------------
 	void DarkFadeOut( ) {
 		_brack.a -= _fade_speed * Time.deltaTime;
-		gameObject.GetComponent<Image>( ).color = _brack;
+		_imag.color = _brack;
 
 		if ( _brack.a < 0 ) {
 			_dark_status = DARK_STATUS.FADE_IN;

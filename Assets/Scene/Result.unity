@@ -2074,7 +2074,7 @@ GameObject:
   - component: {fileID: 1776810487}
   - component: {fileID: 1776810486}
   - component: {fileID: 1776810485}
-  - component: {fileID: 1776810489}
+  - component: {fileID: 1776810488}
   m_Layer: 5
   m_Name: ToTitle
   m_TagString: Untagged
@@ -2144,7 +2144,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1776810483}
---- !u!114 &1776810489
+--- !u!114 &1776810488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776810483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3a396acb9c57c47b65a501bf5eb34e, type: 3}
+  m_Script: {fileID: 11500000, guid: 23b98422cb175e34abae90d72ad1a19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _submit_SE: {fileID: 847939944}
