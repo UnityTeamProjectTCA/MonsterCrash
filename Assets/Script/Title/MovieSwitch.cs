@@ -24,7 +24,7 @@ public class MovieSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update( ) {
-	    if ( Input.anyKeyDown ) {
+	    if ( Input.anyKeyDown && !_is_feid_in ) {
 	    	_timer = 0;
 	    }
 
