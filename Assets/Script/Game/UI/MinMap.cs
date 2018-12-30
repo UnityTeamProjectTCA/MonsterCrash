@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MinMap : MonoBehaviour {
-    [SerializeField] EnemyMake _enemy_make = null;
+    [SerializeField] EnemySpawn _enemy_make = null;
 
     [SerializeField] GameObject _player = null;
     [SerializeField] GameObject _camera = null;

@@ -140,4 +140,8 @@ public class UIManager : MonoBehaviour {
 			warning.transform.SetParent( transform, false );
 		}
 	}
+
+	public float getTime( ) {
+		return _time_limit;
+	}
 }

@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
-public class EnemyMake : MonoBehaviour {
+public class EnemySpawn : MonoBehaviour {
 	[SerializeField] GameObject _enemy_A = null;
 	[SerializeField] GameObject _enemy_B = null;
 	[SerializeField] GameObject _enemy_C = null;
+	[SerializeField] UIManager _timer = null;
 
 	float _near_distance = 0;
 	float _far_distance = 0;
@@ -11,30 +12,32 @@ public class EnemyMake : MonoBehaviour {
 	float _wait_time = 0;
 	float _appear_rate = 0;
 	float _A_rate = 0;
-	float _B_rate = 0;
+
+	[SerializeField] float _C_spawn_time = 0;
 
 	float _wait_count = 0;
-	int _appear_count = 0;								//敵が生成された回数
+	int _appear_count = 0;                              //敵が生成された回数
 	GameObject _player = null;
 
-    GameObject _create_enemy = null;					//生成されたエネミー
+	GameObject _create_enemy = null;                    //生成されたエネミー
 
 	// Use this for initialization
-	void Start ( ) {
+	void Start( ) {
 		_near_distance = GameCSV._near_distance;
 		_far_distance = GameCSV._far_distance;
 		_enemy_max = GameCSV._enemy_max;
 		_wait_time = GameCSV._appear_wait_time;
 		_appear_rate = GameCSV._appear_rate;
 		_A_rate = GameCSV._A_rate;
-		_B_rate = GameCSV._B_rate;
+
+		_C_spawn_time = Random.Range( 30f, 60f );
 
 		_player = GameObject.FindGameObjectWithTag( "Player" );
 		_wait_count = _wait_time;
 	}
 
 	// Update is called once per frame
-	void Update ( ) {
+	void Update( ) {
 		if ( !Player._playable ) {
 			return;
 		}
@@ -44,14 +47,18 @@ public class EnemyMake : MonoBehaviour {
 		//出現するかどうか
 		if ( _wait_count <= 0 ) {
 			if ( _enemy_appear <= _appear_rate ) {
-				enemyMake( );
+				enemySpawn( );
 			}
 			_wait_count = _wait_time;
+		}
+
+		if ( Mathf.Abs( _timer.getTime( ) - _C_spawn_time ) <= 0.01f ) {
+			CSpawn( Random.Range( _near_distance, _far_distance ) );
 		}
 	}
 
 
-	bool isCountLimit ( ) {
+	bool isCountLimit( ) {
 		//エネミーが指定回数以上生成されていたら生成しない
 		if ( _appear_count >= _enemy_max ) {
 			return true;
@@ -60,7 +67,7 @@ public class EnemyMake : MonoBehaviour {
 		return false;
 	}
 
-	bool isAppearLimit ( Vector3 pos ) {
+	bool isAppearLimit( Vector3 pos ) {
 		float field_x = GetComponent<Renderer>( ).bounds.size.x;
 		float field_z = GetComponent<Renderer>( ).bounds.size.z;
 
@@ -73,7 +80,7 @@ public class EnemyMake : MonoBehaviour {
 		return false;
 	}
 
-	void AMake ( Vector3 pos ) {
+	void ASpawn( Vector3 pos ) {
 		if ( isAppearLimit( pos ) ) {
 			return;
 		}
@@ -82,7 +89,7 @@ public class EnemyMake : MonoBehaviour {
 		_appear_count++;
 	}
 
-	void BMake ( Vector3 pos ) {
+	void BSpawn( Vector3 pos ) {
 		if ( isAppearLimit( pos ) ) {
 			return;
 		}
@@ -91,7 +98,7 @@ public class EnemyMake : MonoBehaviour {
 		_appear_count++;
 	}
 
-	void Cmake ( float range ) {
+	void CSpawn( float range ) {
 		if ( GameObject.FindGameObjectWithTag( "EnemyC" ) != null ) {
 			return;
 		}
@@ -103,44 +110,38 @@ public class EnemyMake : MonoBehaviour {
 		_appear_count++;
 	}
 
-	void enemyMake ( ) {
+	void enemySpawn( ) {
 		//enemy数上限
 		if ( isCountLimit( ) ) {
 			return;
 		}
-		
+
 		//出現場所
 		float _enemy_appear_range = Random.Range( _near_distance, _far_distance );
 		float _appear_angle = Random.Range( 0f, 360 * Mathf.Deg2Rad );
-		Vector3 _dir = new Vector3( Mathf.Cos( _appear_angle ), 0, Mathf.Sin( _appear_angle ) );
+		Vector3 _dir = new Vector3( Mathf.Cos( _appear_angle ), 0, Mathf.Sin( _appear_angle ) ).normalized;
 		Vector3 _enemy_pos = _player.transform.position +
-							 _dir.normalized * ( _near_distance + _far_distance - _enemy_appear_range );
+							 _dir * ( _near_distance + _far_distance - _enemy_appear_range );
 
 		float _appear = Random.Range( 0f, 1f );
 		if ( _appear <= _A_rate ) {
-			AMake( _enemy_pos );
-		}
-
-		if ( _A_rate < _appear && _appear <= _A_rate + _B_rate ) {
-			BMake( _enemy_pos );
-		}
-
-		if ( _A_rate + _B_rate < _appear ) {
-			Cmake( _enemy_appear_range );
+			ASpawn( _enemy_pos );
+		} else {
+			BSpawn( _enemy_pos );
 		}
 	}
 
-    //MinMap用----------------------------
-    public GameObject getEnemy( ) {
+	//MinMap用----------------------------
+	public GameObject getEnemy( ) {
 
-        if (_create_enemy != null ) {
-            GameObject create_enemy = _create_enemy;
+		if ( _create_enemy != null ) {
+			GameObject create_enemy = _create_enemy;
 			_create_enemy = null;     //生成したことを1回とれたらリセットする
-            return create_enemy;
-        } else { 
-            return null;    
-        }
+			return create_enemy;
+		} else {
+			return null;
+		}
 
-    } 
-    //-------------------------------------
+	}
+	//-------------------------------------
 }

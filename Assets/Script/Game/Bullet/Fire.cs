@@ -18,8 +18,8 @@ public class Fire : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
-       
-        transform.forward = _player.transform.forward;
+		Vector3 dir = ( transform.position - _player.transform.position ).normalized;
+		transform.forward = Vector3.Scale( dir, new Vector3( 1, 0, 1 ) );
 		rangeUpBuff( );
 	}
 

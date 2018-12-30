@@ -4,11 +4,13 @@ public class Player : MonoBehaviour {
 	//アタック
 	[SerializeField] ParticleSystem _fire = null;
 	bool _fire_flag = false;
-	float _fire_pos_y = 0;
-	float _fire_pos_z = 0;
+	float _fire_height = 0;
+	float _fire_radius = 0;
 	float _stamina_max = 0;
 	float _stamina_speed = 0;
 	float _fire_stamina = 0;
+	float _fire_angle = 0;
+	[SerializeField] float _fire_angle_speed = 0.01f;
 
 	//必殺技
 	[SerializeField] GameObject _deathblow_bullet = null;
@@ -50,10 +52,12 @@ public class Player : MonoBehaviour {
 	Vector3 _initial_pos = Vector3.zero;    //初期位置
 	Quaternion _initial_dir;                //初期角度
 
+	[SerializeField] MonAniCtrl _anim_ctrl = null;
+
 	// Use this for initialization
 	void Start ( ) {
-		_fire_pos_y = GameCSV._fire_pos_y;
-		_fire_pos_z = GameCSV._fire_pos_z;
+		_fire_height = GameCSV._fire_pos_y;
+		_fire_radius = GameCSV._fire_pos_z;
 		_stamina_max = GameCSV._stamina_max;
 		_stamina_speed = GameCSV._stamina_speed;
 		_origin_velocity = GameCSV._origin_velocity;
@@ -116,12 +120,22 @@ public class Player : MonoBehaviour {
 
 
 	void fireMakeing ( ) {
-		_fire.transform.position = transform.position + transform.up * _fire_pos_y + transform.forward * _fire_pos_z;
+		if ( _anim_ctrl.getShakeFlag( ) ) {
+			_fire_angle += _fire_angle_speed;
+		}
+		if ( Mathf.Abs( _fire_angle ) >= Mathf.Deg2Rad * 43 ) {
+			_fire_angle_speed *= -1;
+		}
+		_fire.transform.position = transform.position + transform.right * ( _fire_radius * Mathf.Cos( -_fire_angle + 90 * Mathf.Deg2Rad ) )
+													  +	transform.up * _fire_height
+													  +	transform.forward * ( _fire_radius * Mathf.Sin( -_fire_angle + 90 * Mathf.Deg2Rad ) );
 		if ( Input.GetButtonUp( "Fire1" ) || _fire_stamina <= 0 ) {
 			_fire.Stop( );
 		}
 		if ( Input.GetButtonUp( "Fire1" ) ) {
 			_fire_flag = false;
+			_fire_angle = 0;
+			_fire_angle_speed = Mathf.Abs( _fire_angle_speed );
 		}
 	}
 
